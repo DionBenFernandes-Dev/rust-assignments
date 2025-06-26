@@ -11,6 +11,10 @@ impl Rect {
     fn perimeter(&self) -> u32{
         return 2 * (self.height + self.width);
     }
+
+    fn debug() -> u32 {
+        return 1;
+    }
 }
 
 fn main() {
@@ -21,4 +25,5 @@ fn main() {
 
     println!("Area of rect is {}",rect.area());
     println!("Perimeter of rect is {}",rect.perimeter());
+    println!("Debug is {}",Rect::debug());
 }
